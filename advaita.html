@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="icon" href="./favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="./favicon.svg"/>
+<link rel="stylesheet" href="./globe-ux.css"/>
+<meta name="theme-color" content="#0A0E1A"/>
+<meta name="robots" content="noindex,nofollow"/>
+<title>TEST · Advaita AI · Talk or form</title>
+<meta name="description" content="Bennett test page. Form or talk. Not live prospect traffic."/>
+<style>
+:root{--bg:#F5F5F7;--card:#fff;--text:#1d1d1f;--muted:#6e6e73;--accent:#0071E3;--dark:#0A0E1A;--font:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased}
+.banner{background:#111;color:#ffd60a;text-align:center;padding:.55rem 1rem;font-size:.82rem;letter-spacing:.04em}
+.hero{position:relative;overflow:hidden;padding:4.5rem 1.5rem 3rem;background:radial-gradient(1200px 500px at 20% -10%, color-mix(in srgb, var(--accent) 35%, transparent), transparent 60%), linear-gradient(180deg,#fff,var(--bg));}
+.hero:after{content:"";position:absolute;inset:auto -20% -40% -20%;height:280px;background:radial-gradient(circle,color-mix(in srgb,var(--accent) 18%,transparent),transparent 70%);pointer-events:none;animation:drift 14s ease-in-out infinite}
+@keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.wrap{max-width:1080px;margin:0 auto}
+.badge{display:inline-block;background:color-mix(in srgb,var(--accent) 12%,#fff);color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 30%,#fff);padding:.28rem .8rem;border-radius:999px;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+h1{font-size:clamp(2rem,4.6vw,3.3rem);letter-spacing:-.035em;line-height:1.08;margin:.9rem 0 .6rem;max-width:16ch}
+.sub{font-size:1.08rem;color:var(--muted);max-width:42ch;margin-bottom:1.6rem}
+.grid{display:grid;grid-template-columns:1.1fr .9fr;gap:1.4rem;align-items:stretch}
+@media(max-width:860px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid rgba(0,0,0,.06);border-radius:22px;padding:1.4rem;box-shadow:0 18px 50px rgba(0,0,0,.06);backdrop-filter:blur(18px);transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s}
+.card:hover{transform:translateY(-4px);box-shadow:0 24px 60px rgba(0,0,0,.1)}
+.globe-stage{min-height:420px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 40%, color-mix(in srgb,var(--accent) 22%,#0a0e1a), #0a0e1a 72%);border-radius:22px;position:relative;overflow:hidden}
+elevenlabs-convai{display:block;min-height:420px;width:100%}
+.status{color:#fff;margin-top:1rem;font-size:.9rem;opacity:.85}
+.micro{font-size:.8rem;color:#c7c7cc;margin-top:.35rem}
+.btn{display:inline-flex;align-items:center;gap:.45rem;border:0;border-radius:999px;padding:.85rem 1.25rem;font-weight:700;cursor:pointer;background:var(--accent);color:#fff;font-size:.95rem;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px color-mix(in srgb,var(--accent) 40%,transparent)}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid rgba(0,0,0,.12)}
+.row{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1rem}
+label{display:block;font-size:.8rem;font-weight:700;margin:.7rem 0 .3rem}
+input,select,textarea{width:100%;padding:.75rem .85rem;border-radius:12px;border:1.5px solid #e5e5ea;background:#fafafa;font:inherit}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 18%,transparent);background:#fff}
+.section{padding:2.4rem 1.5rem 4rem}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.2rem}
+@media(max-width:700px){.facts{grid-template-columns:1fr}}
+.fact{padding:1rem;border-radius:16px;background:#fff;border:1px solid rgba(0,0,0,.05)}
+.fact b{display:block;font-size:.95rem;margin-bottom:.2rem}
+footer{padding:1.5rem;text-align:center;color:var(--muted);font-size:.8rem}
+.ok{color:#248a3d;font-weight:700}
+.warn{background:#fff3cd;color:#634806;padding:.7rem 1rem;border-radius:12px;font-size:.85rem;margin-bottom:1rem}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+.access{margin-top:1.4rem;padding:1rem 1.1rem;border-radius:16px;background:#fff;border:1px solid rgba(0,0,0,.06);font-size:.85rem;color:#6e6e73}
+.access b{color:#1d1d1f}
+.btn:focus,.form-control:focus,input:focus,select:focus,textarea:focus,button:focus{outline:2px solid var(--accent);outline-offset:2px}
+elevenlabs-convai{display:block;margin:0 auto}
+.state-stop{display:none;background:#fff3cd;color:#634806;padding:.7rem 1rem;border-radius:12px;margin:.6rem 0;font-size:.85rem}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to form or talk</a>
+<div class="banner">TEST PAGE FOR BENNETT · Not a live apply page · SRP is off · No prospect ads pointed here</div>
+<section class="hero">
+  <div class="wrap">
+    <span class="badge">Advaita · Franchise KI</span>
+    <h1>Talk instead of typing.</h1>
+    <p class="sub">Same questions. Faster. It can book a discovery or mapping session.</p>
+    <p class="micro">This is AI. You can switch back to the form any time. Talk is recorded so the team can follow up.</p>
+    <div class="row">
+      <button class="btn" id="talkBtn">Talk instead</button>
+      <button class="btn ghost" id="formBtn">Use the form</button>
+    </div>
+  </div>
+</section>
+<section class="section" id="main">
+  <div class="wrap grid">
+    <div class="globe-stage" id="talkPane">
+            <elevenlabs-convai
+        agent-id="agent_1101m0xd29e0e27vtyyx85nn16kp"
+        variant="expanded"
+        avatar-orb-color-1="#3496FF"
+        avatar-orb-color-2="#9CE6E6"
+        action-text="Talk about Advaita"
+        start-call-text="Start talking"
+        end-call-text="Hang up"
+        listening-text="Listening"
+        speaking-text="Talking"
+        dismissible="true"></elevenlabs-convai>
+<script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+      <div id="elFail" class="state-stop" role="status" aria-live="polite"></div>
+    </div>
+    <div class="card" id="formPane" style="display:none">
+      <div class="warn">Same fields the globe collects. TEST only — this submit does not fire the live speed-to-lead texts.</div>
+      <h2>Apply by form</h2>
+      <form id="leadForm">
+        <label for="fn">First name</label><input id="fn" name="first_name" autocomplete="given-name" required/>
+        <label for="ln">Last name</label><input id="ln" name="last_name" autocomplete="family-name"/>
+        <label for="em">Email</label><input id="em" type="email" name="email" autocomplete="email" required/>
+        <label for="ph">Phone</label><input id="ph" type="tel" name="phone" autocomplete="tel" required/>
+        <label>City / market</label><input name="market"/>
+        <label>State</label><input name="state" maxlength="2" placeholder="UT"/>
+        <label>Capital ballpark</label>
+        <select name="capital">
+          <option value="">Prefer not to say yet</option>
+          <option>&lt;$50K</option>
+          <option>$50K–$150K</option>
+          <option>$150K–$500K</option>
+          <option>$500K+</option>
+        </select>
+        <label>What's the part you're least sure about?</label>
+        <textarea name="concern" rows="3"></textarea>
+        <div class="row"><button class="btn" type="submit">Send for the call</button></div>
+        <p id="formMsg" class="micro"></p>
+      </form>
+          </div>
+  </div>
+  <div class="wrap facts">
+    <div class="fact"><b>Capital bar</b>Marketing spend bands. Under $1k/mo = nurture, no call.</div>
+    <div class="fact"><b>Earnings</b>Not spoken. Disclosure document only.</div>
+    <div class="fact"><b>SMS</b>Globe does not text. Intro-booked workflow owns that.</div>
+  </div>
+</section>
+<div class="access"><b>This is a test page.</b> Talk is AI. Recording is on so the team can follow up. You can use the form instead. Mic needs a reason: so the globe can hear you.</div>
+<footer>Franchise KI test page. Not live prospect traffic.</footer>
+<script>
+document.getElementById('talkBtn').onclick = () => {
+  document.getElementById('formPane').style.display='none';
+  document.getElementById('talkPane').style.display='flex';
+};
+document.getElementById('formBtn').onclick = () => {
+  document.getElementById('talkPane').style.display='none';
+  document.getElementById('formPane').style.display='block';
+};
+const st=document.getElementById('stateSel');
+if(st){st.onchange=()=>{const bad=['CT','IL','MN','WA']; const el=document.getElementById('stateStop'); if(el) el.style.display=bad.includes(st.value)?'block':'none';};}
+const form=document.getElementById('leadForm');
+if(form){form.onsubmit = (e) => {
+  e.preventDefault();
+  const msg=document.getElementById('formMsg');
+  msg.textContent = 'Captured locally for this TEST page. Live CRM write stays off.';
+  msg.className='ok';
+};}
+</script>
+<script src="./globe-ux.js" defer></script>
+</body></html>
+
+<!-- pcl-csll-r7 2026-08-25T23:13:54Z -->
+
+<!-- csll-v2-r7 2026-08-25T23:15:59Z unique -->

@@ -1,0 +1,21 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/salad-house", "destination": "/salad-house.html" },
+    { "source": "/indy-clover", "destination": "/indy-clover.html" },
+    { "source": "/advaita", "destination": "/advaita.html" },
+    { "source": "/franchise-ki", "destination": "/franchise-ki.html" },
+    { "source": "/srp", "destination": "/srp.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Permissions-Policy", "value": "microphone=(self)" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+      ]
+    }
+  ]
+}
